@@ -20,9 +20,9 @@ function NewsList() {
   useEffect(() => {
     const getArticles = async () => {
       const res = await axios.get(
-        "https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=f8635ef469e246d9aac1c836bb19e539"
+        "https://api.currentsapi.services/v1/latest-news?apiKey=GV6fiZfLNjlDQHSVyT7IHwRyoK_wYFQ-Di3cwVOwIGSbIaVP"
       );
-      setArticles(res.data.articles);
+      setArticles(res.data.news);
       setLoading(false);
       //   console.log(res.data.articles);
     };

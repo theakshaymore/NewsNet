@@ -7,14 +7,14 @@ const NewsItem = ({ item, loading }) => {
     return <h2>Loading...</h2>;
   }
   return (
-    <div className="news" key={item.source.id}>
+    <div className="news" key={item.id}>
       <Box p={5} mt={8} display={{ md: "flex" }}>
         <Box flexShrink={0}>
           <Image
             boxSize="200px"
             borderRadius="base"
             width={80}
-            src={item.urlToImage}
+            src={item.image}
             alt="img"
           />
         </Box>
